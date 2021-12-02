@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  createCanvas(width/2, height/2, WEBGL);
   rectMode(CENTER);
   angleMode(DEGREES);
   a = 0;
@@ -13,8 +13,8 @@ function setup() {
 
 function draw() {
   background(0);
-  pointLight(255, 255, 255, -200, -200, 200);
-  pointLight(255, 255, 255, 200, -200, 200);
+  pointLight(255, 255, 255, -width, -height, 200);
+  pointLight(255, 255, 255, width, -height, 200);
   specularMaterial(255, 255, 255);
   //normalMaterial();
   texture(img);
